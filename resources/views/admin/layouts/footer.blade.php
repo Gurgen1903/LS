@@ -5,5 +5,6 @@
 
 
 <script src="{{ url('js/script.js') }}"></script>
+<script src="{{ url('js/adminScript.js') }}"></script>
 </body>
 </html>

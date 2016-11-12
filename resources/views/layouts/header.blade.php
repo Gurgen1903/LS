@@ -42,11 +42,12 @@
         </ul>
         <ul class="center_header_menu ">
             <div class="border_top_header_center">
-                <li><a href="#">Man</a></li>
-                <li><a href="#">Woman</a></li>
-                <li class=""><a href="#">Children</a></li>
-                <li class=""><a href="#">Sale</a></li>
-                <li class=""><a href="#">Shoes</a></li>
+                @foreach($main_category as $val)
+                    @if($val->hide == 1)
+                        <li><a href="#">{{$val->category_name_en}}</a></li>
+
+                    @endif
+                @endforeach
             </div>
         </ul>
         <ul class="right_header_menu ">

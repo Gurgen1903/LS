@@ -55,3 +55,25 @@ body {
     position: relative;
     height: 390px;
 }
+
+.mainCat {
+    overflow: hidden;
+}
+.mainCat .pnerMainCat{
+    float: left;
+}
+.mainCat .pnerMainCat span{
+    margin-left: 25px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.mainCat .anerMainCat{
+    float: right;
+}
+.mainCat .anerMainCat a{
+    display: inline-block;
+    margin-left: 10px;
+}
+.forma_category input[type="submit"]{
+    padding: 8px;
+}

@@ -25,7 +25,8 @@ class HomeController extends Controller
      */
     public function index(AdminServices $adminServices)
     {
+        $main_category = $adminServices->getAllMainCategory();
         $data = $adminServices->getAllImgForSlider();
-        return view('home',compact('data'));
+        return view('home',compact('data','main_category'));
     }
 }

@@ -2,6 +2,7 @@
 namespace App\Http\Services;
 
 use Illuminate\Support\Facades\DB;
+use App\home_category;
 
 class AdminServices
 {
@@ -34,6 +35,24 @@ class AdminServices
     public function deleteImg($id){
         return DB::table('img_slider')->where('id',$id)->delete();
     }
+
+    public function insertNewCategory($data){
+        home_category::create($data);
+    }
+    public function getAllMainCategory(){
+        return DB::table('home_categories')->get();
+    }
+
+    public function deleteMainCategoryById($id){
+        return DB::table('home_categories')->where('id',$id)->delete();
+    }
+    public function getCategoryAllDataById($id){
+        return DB::table('home_categories')->where('id',$id)->first();
+    }
+    public function editMainCategoryData($data,$id){
+        return DB::table('home_categories')->where('id',$id)->update($data);
+    }
+
 
 
 

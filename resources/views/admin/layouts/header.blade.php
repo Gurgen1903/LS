@@ -22,14 +22,14 @@
 
 
 
-<header>
+<header data-base_url="{{url('/')}}">
     <ul id="staggered-list" class="side-nav fixed grey darken-4 blue-grey-text text-lighten-4 go">
 
         <div style="text-align:center;" id="profilepic">
             Admin
         </div>
         <li><a  class="grey-text text-lighten-2" href="{{url('/admin/add-photo')}}">Добавить фото в слайдер</a></li>
-        <li><a id="links" class="pink-text lighten-2" href="#"><i class="fa fa-terminal fa-2x fa-fw"></i>Projects</a></li>
+        <li><a id="links" class="pink-text lighten-2" href="{{url('/admin/category')}}">Категории</a></li>
         <li><a id="links" class="green-text text-lighten-2" href="#"><i class="fa fa-bar-chart fa-2x fa-fw"></i>Skills</a></li>
         <li><a id="links" class="yellow-text text-lighten-2" href="#"><i class="fa fa-graduation-cap fa-2x fa-fw"></i>Education</a></li>
         <li><a id="links"class="blue-text text-lighten-2" href="#"><i class="fa fa-code fa-2x fa-fw"></i>Source Codes</a></li>
